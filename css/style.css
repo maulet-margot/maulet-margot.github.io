@@ -143,6 +143,7 @@ a:focus {
   background-image: url(../img/Logo.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 100vh;
   min-height: 375px;
   position: relative;
@@ -243,13 +244,13 @@ a:focus {
   color: #8f8f8f;
 }
 
-/* Work */
+/* Product */
 
-#work {
+#product {
   background-color: #f9e1d7;
 }
 
-.tm-work-description {
+.tm-product-description {
   max-width: 650px;
   width: 100%;
   font-size: 0.9rem;
@@ -261,7 +262,7 @@ a:focus {
 }
 
 .tm-gallery-item {
-  margin: 0 15px;
+  margin: 0 auto;
 }
 
 .slick-dots {
