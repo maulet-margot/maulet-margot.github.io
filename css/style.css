@@ -58,8 +58,8 @@ a:focus {
 /* Navbar */
 
 .logo {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
 .tm-navbar {
@@ -68,6 +68,7 @@ a:focus {
   z-index: 1000;
   background-color: transparent;
   transition: all 0.3s ease;
+  padding: 0;
 }
 
 .tm-navbar.scroll {
@@ -76,18 +77,24 @@ a:focus {
 }
 
 .navbar-brand {
-  color: #f9e1d7;
+  color: #4f4f4f;
   font-size: 1.4rem;
-  font-weight: bold;
-}
-
-.navbar-brand:hover,
-.tm-navbar.scroll .navbar-brand:hover {
-  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-left: -64px;
 }
 
 .tm-navbar.scroll .navbar-brand {
   color: #6f6f6f;
+  margin-left: 0;
+}
+
+.navbar-brand:hover {
+  color: #6f6f6f;
+}
+
+.tm-navbar.scroll .navbar-brand:hover {
+  color: #8f8f8f;
 }
 
 .nav-item {
@@ -95,27 +102,29 @@ a:focus {
 }
 
 .tm-nav-link {
-  color: #f9e1d7;
+  color: #4f4f4f;
 }
 
 .tm-navbar.scroll .tm-nav-link {
   color: #6f6f6f;
 }
 
-.tm-navbar.scroll .tm-nav-link:hover,
-.tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: white;
+  color: #6f6f6f;
+}
+
+.tm-navbar.scroll .tm-nav-link:hover,
+.tm-navbar.scroll .tm-nav-link.current {
+  color: #8f8f8f;
 }
 
 .navbar-toggler {
-  border: 1px solid #f9e1d7;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .navbar-toggler-icon {
-  color: #f9e1d7;
+  color: #4f4f4f;
   padding-top: 6px;
 }
 
@@ -366,7 +375,7 @@ a:focus {
 /*---------------*/
 
 figure.effect-honey {
-  background: #4a3753;
+  background: #6f6f6f;
   max-width: 220px;
 }
 
@@ -453,7 +462,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-contact-item {
-  margin-bottom: 75px;
+  margin-bottom: 25px;
 }
 
 .tm-contact-item-link {
