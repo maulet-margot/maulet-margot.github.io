@@ -133,7 +133,7 @@ a:focus {
   background-image: url(../img/main-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   width: 100vw;
   height: 100vh;
   min-height: 375px;
@@ -430,9 +430,10 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(../img/the-town-bg-02.jpg);
+  background-image: url(../img/contact-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  /* background-size: cover; */
   min-height: 850px;
   position: relative;
   padding-bottom: 50px;
