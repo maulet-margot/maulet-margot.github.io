@@ -68,7 +68,13 @@ a:focus {
   z-index: 1000;
   background-color: transparent;
   transition: all 0.3s ease;
-  padding: 0 .25rem;
+  padding: 0;
+}
+
+@media (max-width: 974px) {
+  .tm-navbar {
+    padding: 0 .5rem;
+  }
 }
 
 .tm-navbar.scroll {
@@ -81,7 +87,13 @@ a:focus {
   font-size: 1.4rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  margin-left: -80px;
+  margin-left: -64px;
+}
+
+@media (max-height: 974px) {
+  .navbar-brand {
+    margin-left: -80px;
+  }
 }
 
 .tm-navbar.scroll .navbar-brand {
