@@ -9,6 +9,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
 a {
   transition: all 0.3s ease;
 }
@@ -135,17 +136,90 @@ a:focus {
   padding-right: 10px;
 }
 
-.navbar-toggler-icon {
+.navbar-toggler-hamburger {
   color: #4f4f4f;
   padding-top: 6px;
 }
 
-.tm-navbar.scroll .navbar-toggler {
-  border: 1px solid #6f6f6f;
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    display: block;
+    margin-top: 4px;
+    -webkit-transition: all 0.42s ease-in-out;
+    -moz-transition: all 0.42s ease-in-out;
+    -ms-transition: all 0.42s ease-in-out;
+    -o-transition: all 0.42s ease-in-out;
+    transition: all 0.42s ease-in-out;
 }
 
-.tm-navbar.scroll .navbar-toggler-icon {
-  color: #6f6f6f;
+#navbar-toggler {
+    right: 10px !important;
+    top: 80px;
+    display: inline-block !important;
+    padding-top: 9px;
+    z-index: 1070;
+    padding: 9px !important;
+}
+
+#navbar-toggler-hamburger {
+    transform: rotate(180deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar-toggler.collapsed > #navbar-toggler-hamburger {
+    transform: rotate(0deg);
+}
+
+#navbar-toggler .icon-bar {
+    background-color: #4f4f4f !important;
+}
+
+#navbar-toggler:hover .icon-bar {
+    background-color: #6f6f6f !important;
+}
+
+.tm-nav-link {
+  color: #4f4f4f;
+}
+
+.tm-navbar.scroll #navbar-toggler .icon-bar {
+  background-color: #6f6f6f !important;
+}
+
+.tm-navbar.scroll #navbar-toggler:hover .icon-bar {
+    background-color: #8f8f8f !important;
+}
+
+#navbar-toggler .top-bar {
+    transform: translateX(3px) rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+#navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+#navbar-toggler .bottom-bar {
+    transform: translateX(3px) rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+#navbar-toggler.collapsed .top-bar {
+    transform: translateX(0) rotate(0);
+}
+
+#navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+#navbar-toggler.collapsed .bottom-bar {
+    transform: translateX(0)rotate(0);
 }
 
 /* Main */
@@ -455,7 +529,7 @@ figure.effect-honey:hover h2 i {
   background-position: center;
   background-repeat: no-repeat;
   /* background-size: cover; */
-  min-height: 850px;
+  min-height: 100vh;
   position: relative;
   padding-bottom: 50px;
   padding-top: 160px;
@@ -633,4 +707,19 @@ p {
     margin-left: 0;
     margin-top: 20px;
   }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #8f8f8f;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #8f8f8f;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #4f4f4f;
 }
