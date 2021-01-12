@@ -72,7 +72,7 @@ a:focus {
   padding: 0;
 }
 
-@media (max-width: 974px) {
+@media (max-width: 991px) {
   .tm-navbar {
     padding: 0 .5rem;
   }
@@ -91,7 +91,7 @@ a:focus {
   margin-left: -64px;
 }
 
-@media (max-height: 974px) {
+@media (max-width: 991px) {
   .navbar-brand {
     margin-left: -80px;
   }
@@ -131,16 +131,6 @@ a:focus {
   color: #8f8f8f;
 }
 
-.navbar-toggler {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.navbar-toggler-hamburger {
-  color: #4f4f4f;
-  padding-top: 6px;
-}
-
 .icon-bar {
     width: 22px;
     height: 2px;
@@ -155,21 +145,24 @@ a:focus {
 }
 
 #navbar-toggler {
-    right: 10px !important;
-    top: 80px;
-    display: inline-block !important;
-    padding-top: 9px;
+    display: inline-block;
     z-index: 1070;
-    padding: 9px !important;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+  #navbar-toggler {
+    display: none;
+  }
 }
 
 #navbar-toggler-hamburger {
-    transform: rotate(180deg);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  transform: rotate(180deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #navbar-toggler.collapsed > #navbar-toggler-hamburger {
