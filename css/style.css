@@ -1,4 +1,24 @@
 
+@font-face {
+	font-family: Audrey;
+	src: url(../font/Audrey-Normal.otf);
+}
+@font-face {
+	font-family: Audrey;
+	font-style: italic;
+	src: url(../font/Audrey-NormalOblique.otf);
+}
+@font-face {
+	font-family: Audrey;
+	font-weight: bold;
+	src: url(../font/Audrey-Bold.otf);
+}
+/* @font-face {
+	font-family: Audrey;
+	font-weight: bold italic;
+	src: url(../font/Audrey-BoldOblique.otf);
+} */
+
 html {
   font-size: 18px;
 }
@@ -8,6 +28,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: Audrey;
+  font-style: normal;
 }
 
 a {
