@@ -19,6 +19,21 @@
 	src: url(../font/Audrey-BoldOblique.otf);
 } */
 
+@font-face {
+	font-family: Gotham;
+	src: url(../font/Gotham-Light.otf);
+}
+@font-face {
+	font-family: Gotham;
+	font-style: italic;
+	src: url(../font/Gotham-BookItalic.otf);
+}
+@font-face {
+	font-family: Gotham;
+	font-weight: bold;
+	src: url(../font/Gotham-Bold.otf);
+}
+
 html {
   font-size: 18px;
 }
@@ -28,6 +43,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: Gotham;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {  
   font-family: Audrey;
   font-style: normal;
 }
@@ -92,6 +112,8 @@ a:focus {
   background-color: transparent;
   transition: all 0.3s ease;
   padding: 0;
+  font-family: Audrey;
+  font-style: normal;
 }
 
 @media (max-width: 991px) {
@@ -125,11 +147,11 @@ a:focus {
 }
 
 .navbar-brand:hover {
-  color: #6f6f6f;
+  color: #7f7f7f;
 }
 
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #8f8f8f;
+  color: #9f9f9f;
 }
 
 .nav-item {
@@ -145,12 +167,12 @@ a:focus {
 }
 
 .tm-nav-link:hover {
-  color: #6f6f6f;
+  color: #7f7f7f;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current {
-  color: #8f8f8f;
+  color: #9f9f9f;
 }
 
 .icon-bar {
@@ -196,7 +218,7 @@ a:focus {
 }
 
 #navbar-toggler:hover .icon-bar {
-    background-color: #6f6f6f !important;
+    background-color: #7f7f7f !important;
 }
 
 .tm-nav-link {
@@ -208,7 +230,7 @@ a:focus {
 }
 
 .tm-navbar.scroll #navbar-toggler:hover .icon-bar {
-    background-color: #8f8f8f !important;
+    background-color: #9f9f9f !important;
 }
 
 #navbar-toggler .top-bar {
