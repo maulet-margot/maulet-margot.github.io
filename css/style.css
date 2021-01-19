@@ -54,6 +54,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   transition: all 0.3s ease;
+  color: #9b3f17;
+}
+
+a:hover,
+a:active {
+  color: #431b0a;
 }
 
 a:hover,
@@ -70,7 +76,7 @@ a:focus {
 }
 
 .btn:hover {
-  background-color: #ced4da;
+  background-color: #f5cdbc;
 }
 
 .tm-section-pad-top {
@@ -94,8 +100,8 @@ a:focus {
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-  color: white;
-  background-color: #6f6f6f;
+  color: #4f4f4f;
+  background-color: #f2bda6;
 }
 
 /* Navbar */
@@ -511,7 +517,7 @@ figure.effect-honey img {
 }
 
 figure.effect-honey:hover img {
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 figure.effect-honey figcaption::before {
