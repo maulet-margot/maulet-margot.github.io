@@ -178,10 +178,7 @@
                   <div class="tm-underline-inner"></div>
                 </div>
                 <p class="mb-5">
-                  Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui,
-                  non tempus sem turpis vitae lorem. Maecenas eget odio in sapien ultrices
-                  viverra vitae vel leo. Curabitur at elit eu risus pharetra pellentesque
-                  at at velit.
+                  Retrouvez-nous sur les réseaux sociaux ou contactez-nous par email ou par téléphone.
                 </p>
             </div>
             
@@ -285,13 +282,19 @@
           background_image_parallax($(".tm-parallax"), 0.30, true);
         }, true);
 
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
+        function setNavbarScroll(){          
           if($(document).scrollTop() > 60) {
             $('.tm-navbar').addClass("scroll");
           } else {
             $('.tm-navbar').removeClass("scroll");
           }
+        }
+
+        setNavbarScroll();
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){
+          setNavbarScroll();
         });
         
         // Close mobile menu after click 
