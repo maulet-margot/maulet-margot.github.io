@@ -257,6 +257,10 @@ a:focus {
     transform: translateX(0)rotate(0);
 }
 
+.navbar-collapse { /* smoothens navbar dropdown */
+  transition: all 0.3s ease;
+}
+
 /* Main */
 
 #main {
@@ -705,12 +709,12 @@ p {
   }
 
   .navbar-nav {
-    max-width: 200px;
+    /* max-width: 250px; */
     text-align: right;
   }
 
   .navbar-collapse {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     padding: 10px;
     border-radius: 3px;
   }
