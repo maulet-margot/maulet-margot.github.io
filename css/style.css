@@ -476,16 +476,16 @@ a:focus {
   opacity: 0;
 }
 
-.grid figure h2 {
+.grid figure span {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
-.grid figure h2 span {
+.grid figure span h4 {
   font-weight: 800;
 }
 
-.grid figure h2,
+.grid figure span,
 .grid figure p {
   margin: 0;
 }
@@ -526,7 +526,7 @@ figure.effect-honey figcaption::before {
   transform: translate3d(0, 10px, 0);
 }
 
-figure.effect-honey h2 {
+figure.effect-honey span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -537,7 +537,7 @@ figure.effect-honey h2 {
   transform: translate3d(0, -30px, 0);
 }
 
-figure.effect-honey h2 i {
+figure.effect-honey span i {
   font-style: normal;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -547,14 +547,14 @@ figure.effect-honey h2 i {
 }
 
 figure.effect-honey figcaption::before,
-figure.effect-honey h2 {
+figure.effect-honey span {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
 
 figure.effect-honey:hover figcaption::before,
-figure.effect-honey:hover h2,
-figure.effect-honey:hover h2 i {
+figure.effect-honey:hover span,
+figure.effect-honey:hover span i {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
