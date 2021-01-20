@@ -147,11 +147,11 @@ a:focus {
 }
 
 .navbar-brand:hover {
-  color: #6c6460;
+  color: #7a706c;
 }
 
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #877d78;
+  color: #9f9793;
 }
 
 .nav-item {
@@ -167,12 +167,12 @@ a:focus {
 }
 
 .tm-nav-link:hover {
-  color: #6c6460;
+  color: #7a706c;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current {
-  color: #877d78;
+  color: #9f9793;
 }
 
 .icon-bar {
@@ -218,7 +218,7 @@ a:focus {
 }
 
 #navbar-toggler:hover .icon-bar {
-    background-color: #6c6460 !important;
+    background-color: #7a706c !important;
 }
 
 .tm-nav-link {
@@ -230,7 +230,7 @@ a:focus {
 }
 
 .tm-navbar.scroll #navbar-toggler:hover .icon-bar {
-    background-color: #877d78 !important;
+    background-color: #9f9793 !important;
 }
 
 #navbar-toggler .top-bar {
@@ -752,12 +752,12 @@ p {
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: #877d78;
+  background-color: #9f9793;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #877d78;
+  background-color: #9f9793;
 }
 
 ::-webkit-scrollbar-thumb {
