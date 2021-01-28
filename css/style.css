@@ -503,8 +503,15 @@ a:focus {
 /*---------------*/
 
 figure.effect-honey {
-  background: #5f5754;
+  /* background: #5f5754; */
+  background: none;
   max-width: 220px;
+  -webkit-transition: background 0.35s;
+  transition: background 0.35s;
+}
+
+figure.effect-honey:hover {
+  background: #5f5754;
 }
 
 figure.effect-honey img {
