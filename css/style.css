@@ -268,7 +268,7 @@ a:focus {
 #main {
   background-image: url(../img/main-background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   /* background-size: cover; */
   width: 100vw;
   height: 100vh;
@@ -286,7 +286,7 @@ a:focus {
   position: relative;
 }
 
-@media (min-height: 830px) {
+/* @media (min-height: 830px) {
   #main {
     background-position: center 0px;
   }
@@ -308,7 +308,7 @@ a:focus {
   #main {
     background-position: center -300px;
   }
-}
+} */
 
 .tm-main-text-container {
   width: 100%;
