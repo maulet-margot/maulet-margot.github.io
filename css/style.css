@@ -89,7 +89,7 @@ a:focus {
 
 .tm-btn-primary {
   color: #5f5754;
-  background-color: #f9e1d7;
+  background-color: #b08c7c;
   padding: 14px 35px;
   border-radius: 30px;
 }
@@ -97,7 +97,7 @@ a:focus {
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: #363230;
-  background-color: #f5cdbc;
+  background-color: #bc9d8f;
 }
 
 /* Navbar */
@@ -346,7 +346,7 @@ a:focus {
 }
 
 .tm-down-arrow {
-  color: #f9e1d7;
+  color: #b08c7c;
   cursor: pointer;
   border-radius: 50%;
   padding: 10px 22px 8px;
@@ -384,7 +384,7 @@ a:focus {
 /* Product */
 
 #product {
-  background-color: #f9e1d7;
+  background-color: #b08c7c;
 }
 
 .tm-product-description {
@@ -530,7 +530,7 @@ figure.effect-honey figcaption::before {
   left: 0;
   width: 100%;
   height: 10px;
-  background: #f9e1d7;
+  background: #b08c7c;
   content: "";
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
@@ -617,7 +617,7 @@ figure.effect-honey:hover span i {
 
 .tm-contact-item-link:hover i,
 .tm-contact-item-link:hover span {
-  color: #f9e1d7;
+  color: #b08c7c;
 }
 
 .tm-input {
@@ -662,7 +662,7 @@ figure.effect-honey:hover span i {
 
 .tm-footer-link:hover,
 .tm-footer-link:focus {
-  color: #f9e1d7;
+  color: #b08c7c;
   text-decoration: none;
 }
 
