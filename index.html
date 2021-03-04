@@ -221,29 +221,31 @@
     <script src="https://kit.fontawesome.com/1b312674fa.js" crossorigin="anonymous"></script>
     <script>
 
-      // function getOffSet(){
-      //   var _offset = 300;
-      //   var windowHeight = window.innerHeight;
+      function getOffSet(){
+        // var _offset = 300;
+        // var windowHeight = window.innerHeight;
 
-      //   if(windowHeight > 500) {
-      //     _offset = 200;
-      //   } 
-      //   if(windowHeight > 680) {
-      //     _offset = 100
-      //   }
-      //   if(windowHeight > 830) {
-      //     _offset = 0;
-      //   }
+        // if(windowHeight > 500) {
+        //   _offset = 200;
+        // } 
+        // if(windowHeight > 680) {
+        //   _offset = 100
+        // }
+        // if(windowHeight > 830) {
+        //   _offset = 0;
+        // }
 
-      //   return _offset;
-      // }
+        // return _offset;
 
-      // function setParallaxPosition($doc, multiplier, $object){
-      //   var offset = getOffSet();
-      //   var from_top = $doc.scrollTop(),
-      //     bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-      //   $object.css({"background-position" : bg_css });
-      // }
+        return 0;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
 
       // Parallax function
       // Adapted based on https://codepen.io/roborich/pen/wpAsm        
