@@ -268,7 +268,7 @@ a:focus {
 #main {
   background-image: url(../img/main-background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 0px;
   /* background-size: cover; */
   width: 100vw;
   height: 100vh;
@@ -281,7 +281,7 @@ a:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 25vh;
+  height: 20vh;
   /* min-height: 375px; */
   position: relative;
 }
@@ -580,7 +580,7 @@ figure.effect-honey:hover span i {
 #contact {
   color: white;
   background-image: url(../img/contact-background.jpg);
-  background-position: center;
+  background-position: center 0px;
   background-repeat: no-repeat;
   /* background-size: cover; */
   min-height: 100vh;
