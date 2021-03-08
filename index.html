@@ -271,7 +271,7 @@
         $(window).scroll(function(){
           var firstTop = $object.offset().top,
               pos = $(window).scrollTop(),
-              yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+              yPos = Math.round((multiplier * (firstTop - pos))/* - 186*/);              
 
           var bg_css = 'center ' + yPos + 'px';
 

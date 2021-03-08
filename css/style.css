@@ -268,7 +268,7 @@ a:focus {
 #main {
   background-image: url(../img/main-background.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   /* background-size: cover; */
   width: 100vw;
   height: 100vh;
