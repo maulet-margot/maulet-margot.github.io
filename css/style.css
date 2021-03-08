@@ -282,7 +282,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: contain;
   height: 25vh;
-  min-height: 375px;
+  /* min-height: 375px; */
   position: relative;
 }
 
