@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  color: #5f5754;
+  color: #384454;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -54,12 +54,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   transition: all 0.3s ease;
-  color: #9b3f17;
+  color: #7b8da5;
 }
 
 a:hover,
 a:active {
-  color: #431b0a;
+  color: #5d7089;
 }
 
 a:hover,
@@ -80,7 +80,7 @@ a:focus {
 }
 
 .tm-text-primary {
-  color: #5f5754;
+  color: #384454;
 }
 
 .tm-font-big {
@@ -88,16 +88,16 @@ a:focus {
 }
 
 .tm-btn-primary {
-  color: #5f5754;
-  background-color: #b08c7c;
+  color: #fff;
+  background-color: #7b8da5;
   padding: 14px 35px;
   border-radius: .25rem;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-  color: #363230;
-  background-color: #bc9d8f;
+  color: #fff;
+  background-color: #5d7089;
 }
 
 /* Navbar */
@@ -350,7 +350,7 @@ a:focus {
 }
 
 .tm-down-arrow {
-  color: #b08c7c;
+  color: #fff;
   cursor: pointer;
   border-radius: 50%;
   padding: 10px 22px 8px;
@@ -359,7 +359,7 @@ a:focus {
 
 .tm-down-arrow-link:hover > .tm-down-arrow,
 .tm-down-arrow-link:focus > .tm-down-arrow {
-  color: white;
+  color: #fff;
 }
 
 .tm-down-arrow-link:hover,
