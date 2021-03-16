@@ -135,15 +135,19 @@ a:focus {
   margin-left: -64px;
 }
 
+.tm-navbar.scroll .navbar-brand {
+  color: #5f5754;
+  margin-left: -8px;
+}
+
 @media (max-width: 991px) {
   .navbar-brand {
     margin-left: -80px;
   }
-}
 
-.tm-navbar.scroll .navbar-brand {
-  color: #5f5754;
-  margin-left: 0;
+  .tm-navbar.scroll .navbar-brand {
+    margin-left: -2px;
+  }
 }
 
 .navbar-brand:hover {
