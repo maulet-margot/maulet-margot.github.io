@@ -400,12 +400,12 @@ a:focus {
 
 .tm-gallery-container {
   padding-top: 70px;
-  padding-bottom: 0;
-  /* padding-bottom: 120px; */
+  /* padding-bottom: 0; */
+  padding-bottom: 120px;
 }
 
 .tm-gallery-item {
-  margin: 0 auto 120px;
+  margin: 0 auto 2rem;
 }
 
 .slick-dots {
