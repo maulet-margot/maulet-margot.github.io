@@ -3,6 +3,12 @@
 	font-family: CenturyGothic;
 	src: url(../font/CenturyGothic.ttf) format("truetype");
 }
+
+@font-face {
+	font-family: Copperplate;
+	src: url(../font/Copperplate.ttf) format("truetype");
+}
+
 /* @font-face {
 	font-family: Audrey;
 	src: url(../font/Audrey-Normal.otf);
@@ -52,7 +58,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {  
-  font-family: CenturyGothic;
+  font-family: Copperplate;
   font-style: normal;
 }
 
