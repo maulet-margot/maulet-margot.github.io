@@ -1,5 +1,9 @@
 
 @font-face {
+	font-family: CenturyGothic;
+	src: url(../font/CenturyGothic.ttf) format("truetype");
+}
+/* @font-face {
 	font-family: Audrey;
 	src: url(../font/Audrey-Normal.otf);
 }
@@ -13,11 +17,11 @@
 	font-weight: bold;
 	src: url(../font/Audrey-Bold.otf);
 }
-/* @font-face {
+@font-face {
 	font-family: Audrey;
 	font-weight: bold italic;
 	src: url(../font/Audrey-BoldOblique.otf);
-} */
+}
 
 @font-face {
 	font-family: Gotham;
@@ -32,7 +36,7 @@
 	font-family: Gotham;
 	font-weight: bold;
 	src: url(../font/Gotham-Bold.otf);
-}
+} */
 
 html {
   font-size: 18px;
@@ -43,12 +47,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: Gotham;
+  font-family: CenturyGothic;
   font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {  
-  font-family: Audrey;
+  font-family: CenturyGothic;
   font-style: normal;
 }
 
