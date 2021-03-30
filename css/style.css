@@ -433,6 +433,9 @@ section:not(:first-child) {
   text-align: center;
   cursor: pointer;
   height: calc(100% - 36px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid figure img {
