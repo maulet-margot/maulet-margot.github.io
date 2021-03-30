@@ -15,12 +15,12 @@
     <div class="container tm-container-gallery">
         <div class="row">
             <div class="text-center col-12">
-                <h2 data-content="title" class="tm-text-primary tm-section-title mb-4">TITLE</h2>
+                <h2 data-content="title" class="tm-section-title mt-4 mb-4"></h2>
             </div>            
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
+                <div class="mx-auto">
                     <div class="grid tm-gallery row">
                         <div class="col-12 col-md-7">
                             <a href="img/Thumbnails/portrait.jpg">
@@ -89,6 +89,9 @@
     <script src="https://kit.fontawesome.com/1b312674fa.js" crossorigin="anonymous"></script>
     <script>
         $(function(){
+            // Title
+            $("[data-content='title']").text(new URL(window.location.href).searchParams.get("title"));
+
             // Pop up
             $('.tm-gallery').magnificPopup({
                 delegate: 'a',

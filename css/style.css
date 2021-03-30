@@ -777,5 +777,5 @@ p {
 
 .category-gallery-container {
   background-color: #384454;
-  color: white;
+  color: white !important;
 }
