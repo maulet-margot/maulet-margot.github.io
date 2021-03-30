@@ -772,3 +772,10 @@ p {
   border-radius: 10px;
   background-color: #363230;
 }
+
+/* Category gallery */
+
+.category-gallery-container {
+  background-color: #384454;
+  color: white;
+}
