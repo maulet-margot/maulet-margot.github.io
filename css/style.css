@@ -791,3 +791,7 @@ p {
 .category-gallery-container figure.effect-honey:hover {
   background: #384454;
 }
+
+.category-gallery-container .grid figure img {
+  opacity: 1;
+}
