@@ -317,7 +317,7 @@ section:not(:first-child) {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-left: -22px;
+  /* margin-left: -22px; */
 }
 
 @media (max-height: 480px) {
@@ -331,7 +331,7 @@ section:not(:first-child) {
 }
 
 .tm-down-arrow-link {
-  width: 60px;
+  width: 84px;
   display: block;
   margin: -6% auto 0;
 }
