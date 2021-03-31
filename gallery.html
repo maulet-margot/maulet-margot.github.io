@@ -69,7 +69,7 @@
                     recursive: "true"
                 },
                 success: function(result){
-                    var files = result.tree.filter(x => x.path.includes("img/Portraits") && x.mode == "100644");
+                    var files = result.tree.filter(x => x.path.includes(directoryPath) && x.mode == "100644");
 
                     var pictures = files.map(file => generatePicture(file.path));
 
