@@ -779,3 +779,15 @@ p {
   background-color: #384454;
   color: white !important;
 }
+
+.category-gallery-container .grid figure {
+  height: auto;
+}
+
+.category-gallery-container figure.effect-honey figcaption::before {
+  background: #384454;
+}
+
+.category-gallery-container figure.effect-honey:hover {
+  background: #384454;
+}

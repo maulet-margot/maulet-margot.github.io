@@ -11,78 +11,33 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="img/favicon64.png" />
   </head>
-  <body class="category-gallery-container">
+  <body class="category-gallery-container">   
     <div class="container tm-container-gallery">
         <div class="row">
             <div class="text-center col-12">
                 <h2 data-content="title" class="tm-section-title mt-4 mb-4"></h2>
             </div>            
         </div>
-        <i class="fas fa-2x fa-tools"></i><h4 class="d-inline ml-2">Disponible très prochainement</h4>
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-12">
                 <div class="mx-auto">
                     <div class="grid tm-gallery row">
-                        <div class="col-12 col-md-7">
-                            <a href="img/Thumbnails/portrait.jpg">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/Thumbnails/portrait.jpg" alt="Image" class="">
-                                <figcaption>
-                                    <span>Voir<i class="fas fa-fw fa-long-arrow-alt-right"></i></span>
-                                </figcaption>
-                            </figure>
-                            </a>
+                        <div data-content="pictures" class="col-12 col-md-4">
                         </div>
-                        <div class="col-12 col-md-5">
-                            <a href="img/Thumbnails/urbex.jpg">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/Thumbnails/urbex.jpg" alt="Image" class="">
-                                <figcaption>
-                                    <span>Voir<i class="fas fa-fw fa-long-arrow-alt-right"></i></span>
-                                </figcaption>
-                            </figure>
-                            </a>
+                        <div data-content="pictures" class="col-12 col-md-4">
                         </div>
-                        <div class="col-12 col-md-5">
-                            <a href="img/Thumbnails/landscape.jpg">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/Thumbnails/landscape.jpg" alt="Image" class="">
-                                <figcaption>
-                                    <span>Voir<i class="fas fa-fw fa-long-arrow-alt-right"></i></span>
-                                </figcaption>
-                            </figure>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <a href="img/Thumbnails/creation.jpg">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/Thumbnails/creation.jpg" alt="Image" class="">
-                                <figcaption>
-                                    <span>Voir<i class="fas fa-fw fa-long-arrow-alt-right"></i></span>
-                                </figcaption>
-                            </figure>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <a href="img/Thumbnails/drawing.jpg">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/Thumbnails/drawing.jpg" alt="Image" class="">
-                                <figcaption>
-                                    <span>Voir<i class="fas fa-fw fa-long-arrow-alt-right"></i></span>
-                                </figcaption>
-                            </figure>
-                            </a>
+                        <div data-content="pictures" class="col-12 col-md-4">
                         </div>
                     </div>
                 </div>                
             </div>        
-        </div> -->
+        </div>
     </div>
-    <footer class="text-center small tm-footer">
+    <!-- <footer class="text-center small tm-footer">
         <p class="mb-0">
             Copyright &copy; 2021 Maulet Margot
         </p>
-    </footer>
+    </footer> -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
@@ -99,6 +54,43 @@
                 type: 'image',
                 gallery: { enabled: true }
             });
+
+            // Mozaic generation
+            var directoryPath = "img/" + new URL(window.location.href).searchParams.get("directory");
+
+            $.ajax({
+                url: "https://api.github.com/repos/maulet-margot/maulet-margot.github.io/git/trees/master",
+                type: "GET",
+                data: {
+                    accept: "application/vnd.github.v3+json",
+                    // owner: "maulet-margot",
+                    // repo: "maulet-margot.github.io",	
+                    // tree_sha: "master",
+                    recursive: "true"
+                },
+                success: function(result){
+                    var files = result.tree.filter(x => x.path.includes("img/Portraits") && x.mode == "100644");
+
+                    var pictures = files.map(file => generatePicture(file.path));
+
+                    var containers = $("[data-content='pictures']");
+
+                    for(var i = 0; i < pictures.length; i++){
+                        $(containers[i % containers.length]).append(pictures[i]);
+                    }
+                }
+            });
+                
+            function generatePicture(path){
+                return "<a href='" + path + "'>"
+                        + "<figure class='effect-honey tm-gallery-item'>"
+                            + "<img src='" + path + "' alt='Image'>"
+                            + "<figcaption>"
+                                + "<span>Voir<i class='fas fa-fw fa-long-arrow-alt-right'></i></span>"
+                            + "</figcaption>"
+                        + "</figure>"
+                    + "</a>";
+            }
         });
     </script>
   </body>
