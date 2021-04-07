@@ -110,6 +110,7 @@ section:not(:first-child) {
 @media (max-width: 991px) {
   .tm-navbar {
     padding: 0 .5rem;
+    background-color: white;
   }
 }
 
@@ -132,7 +133,7 @@ section:not(:first-child) {
 
 @media (max-width: 991px) {
   .navbar-brand {
-    margin-left: -80px;
+    margin-left: -2px;
   }
 
   .tm-navbar.scroll .navbar-brand {
