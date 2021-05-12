@@ -615,6 +615,10 @@ figure.effect-honey:hover span {
   align-items: center;
 }
 
+.tm-contact-item-link i {
+  width: 54px;
+}
+
 .tm-contact-item-link i,
 .tm-contact-item-link span {
   color: white;
