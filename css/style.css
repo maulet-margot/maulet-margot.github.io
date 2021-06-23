@@ -663,6 +663,15 @@ figure.effect-honey:hover span {
   transition: all 0.3s ease;
 }
 
+.btn-home {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 48px;
+  height: 48px;
+  padding: 10px 12px;
+}
+
 .tm-btn-submit {
   margin-left: 20px;
 }
