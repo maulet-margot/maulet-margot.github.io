@@ -1,28 +1,13 @@
 
 @font-face {
-	font-family: CenturyGothic;
-	src: url(../font/CenturyGothic.ttf) format("truetype");
+	font-family: Florentia;
+	src: url(../font/Florentia-Thin.ttf) format("truetype");
 }
 
-/* @font-face {
-	font-family: Audrey;
-	src: url(../font/Audrey-Normal.otf);
-}
 @font-face {
-	font-family: Audrey;
-	font-style: italic;
-	src: url(../font/Audrey-NormalOblique.otf);
+	font-family: CoreSans;
+	src: url(../font/Core-Sans-Light.ttf) format("truetype");
 }
-@font-face {
-	font-family: Audrey;
-	font-weight: bold;
-	src: url(../font/Audrey-Bold.otf);
-}
-@font-face {
-	font-family: Audrey;
-	font-weight: bold italic;
-	src: url(../font/Audrey-BoldOblique.otf);
-} */
 
 html {
   font-size: 18px;
@@ -33,12 +18,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: CenturyGothic;
+  font-family: Florentia;
   font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {  
-  font-family: CenturyGothic;
+  font-family: CoreSans;
   font-style: normal;
 }
 
@@ -100,8 +85,8 @@ section:not(:first-child) {
 /* Navbar */
 
 .logo {
-  width: 48px;
   height: 48px;
+  width: auto;
 }
 
 .tm-navbar {
@@ -131,7 +116,7 @@ section:not(:first-child) {
   font-weight: 600;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin-left: -64px;
+  margin-left: -100%;
 }
 
 .tm-navbar.scroll .navbar-brand {
